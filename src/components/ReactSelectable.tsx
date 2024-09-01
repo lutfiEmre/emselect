@@ -8,11 +8,15 @@ interface Option
     label: string;
 }
 
+interface SelectedState {
+    [key: string]: string;
+}
+
 interface ReactSelectableProps {
     options: Option[];
     value: string;
-    setvalue: (value: { [key: string]: string }) => void;
-    selected: { [key: string]: string };
+    setvalue: (value: SelectedState) => void;
+    selected: string;
     starteritem: JSX.Element;
     colorfultext: boolean;
     className?: string;
@@ -34,7 +38,6 @@ const DynamicWidthText: React.FC<{
     width: string;
     starteritem: string | JSX.Element;
     colorfultext: boolean;
-    yLimit: number;
     isOpen: boolean;
     onClick: () => void;
     isPlaceholder: boolean;
