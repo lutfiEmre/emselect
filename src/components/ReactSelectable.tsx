@@ -13,7 +13,7 @@ interface ReactSelectableProps {
     value: string;
     setvalue: (value: any) => void;
     selected: any;
-    starteritem: string;
+    starteritem: string | JSX.Element;
     colorfultext: boolean;
     className?: string;
     fieldName: string;
@@ -87,7 +87,7 @@ const ReactSelectable: React.FC<ReactSelectableProps> = ({ options,starteritem, 
     const maxLabel = options.reduce((max, option) => option.label.length > max.length ? option.label : max, '');
     const dropdownWidth = `${calculateTextWidth(maxLabel)}px`;
 
-    const selectedLabel = options.find(option => option.value === value)?.label || label;
+    const selectedLabel = options.find(option => option.value === value)?.label || label || '';
     const isPlaceholder = !value;
 
     const positionClass = direction === 'bottom'
@@ -100,10 +100,11 @@ const ReactSelectable: React.FC<ReactSelectableProps> = ({ options,starteritem, 
             {isOpen && (
                 <div
                     style={{
-                        paddingTop: yLimit && "15px",
-                        maxHeight: `${yLimit * 41}px`,
-                        overflowY: 'auto' 
+                        paddingTop: yLimit ? "15px" : "0",
+                        maxHeight: `${(yLimit || 5) * 41}px`,
+                        overflowY: 'auto'
                     }}
+
                     className={`absolute !w-full  origin-bottom flex flex-col items-center gap-[5px] rounded-[10px] shadow-2xl bg-white z-10 ${positionClass}`}
                 >
                     {options.map((option) => (

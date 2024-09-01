@@ -11,20 +11,19 @@ function App() {
 
 
 
-  const options : any = [
-    { value: 'option1', label: 'Option 1' },
-    { value: 'option2', label: 'Option 2asdasdasdasd' },
-    { value: 'option3', label: 'Option 3' },
-    { value: 'option4', label: 'Emrelutfiasdkaskdaskdasdasdasd' },
-  ];
-  const options2: any = [
+
+  interface Option {
+    value: string;
+    label: string;
+  }
+
+  const options2: Option[] = [
     { value: 'option5', label: 'presentation' },
     { value: 'option6', label: 'Option 2asdasdasdasd' },
     { value: 'option7', label: 'Option 3' },
     { value: 'option8', label: 'Emrelutfiasdkaskdaskdasdasdasd' },
     { value: 'option5', label: 'presentation' },
     { value: 'option6', label: 'Option 2asdasdasdasd' },
-
   ];
   return (
       <>
@@ -33,8 +32,6 @@ function App() {
             <ReactSelectable
                 yLimit={5}
                 starteritem={<div className={""}>
-
-
                 </div>}
                 className={"w-full "}
                 alignment={"center"}
