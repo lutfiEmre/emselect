@@ -15,8 +15,8 @@ interface SelectedState {
 interface ReactSelectableProps {
     options: Option[];
     value: string;
-    setvalue: (value: SelectedState) => void;
-    selected: string;
+    setvalue: any;
+    selected: SelectedState;
     starteritem: JSX.Element;
     colorfultext: boolean;
     className?: string;
@@ -27,6 +27,7 @@ interface ReactSelectableProps {
     direction?: 'top' | 'bottom';
 }
 
+
 const calculateTextWidth = (text: string): number => {
     const baseWidth = 25;
     const charWidth = 8.32;
@@ -36,7 +37,7 @@ const calculateTextWidth = (text: string): number => {
 const DynamicWidthText: React.FC<{
     text: string;
     width: string;
-    starteritem: string | JSX.Element;
+    starteritem: JSX.Element;
     colorfultext: boolean;
     isOpen: boolean;
     onClick: () => void;
@@ -82,6 +83,7 @@ const ReactSelectable: React.FC<ReactSelectableProps> = ({ options,starteritem, 
         setvalue({ ...selected, [fieldName]: optionValue });
         setIsOpen(false);
     };
+
 
     const handleClickOutside = (event: MouseEvent) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
