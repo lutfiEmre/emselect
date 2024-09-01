@@ -11,7 +11,7 @@ interface Option
 interface ReactSelectableProps {
     options: Option[];
     value: string;
-    setvalue: (value: any) => void;
+    setvalue: (value : any) => void;
     selected: any;
     starteritem: any;
     colorfultext: boolean;
@@ -39,8 +39,7 @@ const DynamicWidthText: React.FC<{
     isOpen: boolean,
     onClick: () => void,
     isPlaceholder: boolean,
-    alignment?: string | undefined
-}> = ({text, colorfultext, starteritem, isOpen, onClick, isPlaceholder, alignment}) => {
+}> = ({text, colorfultext, starteritem, isOpen, onClick, isPlaceholder}) => {
     return (
     <div
         // style={{ width }} -> karakter sayısına göre widthi tespit et. emrev1
