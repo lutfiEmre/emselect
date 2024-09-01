@@ -30,7 +30,7 @@ function App() {
         <div className={'w-full flex justify-start items-center mt-[50px] flex-col'}>
           <div className={'w-full px-[50px] sm:w-[500px]'}>
             <ReactSelectable
-                yLimit={5}
+                yLimit={6}
                 starteritem={<div>
                     ⭐
                 </div>}

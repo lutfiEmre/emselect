@@ -11,16 +11,15 @@ interface Option
 interface ReactSelectableProps {
     options: Option[];
     value: string;
-    setvalue: (value : any) => void;
-    selected: any;
-    starteritem: any;
+    setvalue: (value: { [key: string]: string }) => void;
+    selected: { [key: string]: string };
+    starteritem: JSX.Element;
     colorfultext: boolean;
     className?: string;
     fieldName: string;
     label?: string;
     yLimit?: number;
     alignment?: string;
-
     direction?: 'top' | 'bottom';
 }
 
@@ -31,14 +30,15 @@ const calculateTextWidth = (text: string): number => {
 };
 
 const DynamicWidthText: React.FC<{
-    text: string,
-    width: string,
-    starteritem: string,
-    colorfultext: boolean,
-    yLimit: number,
-    isOpen: boolean,
-    onClick: () => void,
-    isPlaceholder: boolean,
+    text: string;
+    width: string;
+    starteritem: string | JSX.Element;
+    colorfultext: boolean;
+    yLimit: number;
+    isOpen: boolean;
+    onClick: () => void;
+    isPlaceholder: boolean;
+    alignment?: string;
 }> = ({text, colorfultext, starteritem, isOpen, onClick, isPlaceholder}) => {
     return (
     <div
