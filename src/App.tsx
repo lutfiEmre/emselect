@@ -4,10 +4,10 @@ import './App.css'
 import ReactSelectable from "./components/ReactSelectable.tsx";
 
 function App() {
-  const [selectedValue, setSelectedValue] = useState<any>({
-    automobiles: "",
-    presentation: ""
-  });
+    const [selectedValue, setSelectedValue] = useState({
+      automobiles: "",
+      presentation: ""
+    });
 
 
 
@@ -42,6 +42,7 @@ function App() {
                 value={selectedValue.presentation}
                 selected={selectedValue}
                 setvalue={setSelectedValue}
+
                 fieldName="presentation"
             />
           </div>
