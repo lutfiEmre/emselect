@@ -13,7 +13,7 @@ interface ReactSelectableProps {
     value: string;
     setvalue: (value: any) => void;
     selected: any;
-    starteritem: string | JSX.Element;
+    starteritem: any;
     colorfultext: boolean;
     className?: string;
     fieldName: string;
@@ -39,7 +39,7 @@ const DynamicWidthText: React.FC<{ text: string; width: string;starteritem: stri
         className="border-[1px] cursor-pointer w-full border-opacity-20 justify-between pr-[15px] pl-[15px] rounded-[8px] flex  items-center h-[41px] border-[#444444]"
     >
         <div className={`max-w-[80%] flex items-center gap-[5px] overflow-hidden ${isPlaceholder ? 'text-[#444444] text-opacity-50' : ''}`}>
-            <div className={'mt-[3px] text-[16px] pr-[2px]'}>
+            <div className={'mt-[0px] text-[16px] pr-[2px]'}>
                 {starteritem}
             </div>
             <span className={`${colorfultext && "animated-text"}`}>{text}</span>

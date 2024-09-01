@@ -31,8 +31,8 @@ function App() {
           <div className={'w-full px-[50px] sm:w-[500px]'}>
             <ReactSelectable
                 yLimit={5}
-                starteritem={<div className={""}>
-
+                starteritem={<div>
+                    ⭐
                 </div>}
                 className={"w-full "}
                 alignment={"center"}
