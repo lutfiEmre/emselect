@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# React Selectable Dropdown Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates a customizable React-based selectable dropdown component. It uses functional components, hooks such as `useState`, `useEffect`, and `useRef`, and provides several configurable properties to tailor dropdown behavior and appearance.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Text Width Calculation**: Automatically adjusts the width of the dropdown based on the label of the selected option.
+- **Starter Item**: An optional starter item to display within the dropdown selection area before the user makes a selection.
+- **Customizable Alignment**: Dropdown options can be aligned to the start or center.
+- **Customizable Max Height**: Limit the visible dropdown options with a scrollable view, controlled by the `yLimit` property.
+- **Colorful Text Animation**: Supports colorful text animation inside the dropdown using the `colorfultext` prop.
+- **Click Outside to Close**: The dropdown closes when the user clicks outside the component.
+- **Upward or Downward Dropdown**: Set the dropdown direction with the `direction` prop.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+git clone https://github.com/your-username/react-selectable-dropdown.git
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+cd react-selectable-dropdown
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+npm install
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+npm run dev
