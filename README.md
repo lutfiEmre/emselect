@@ -2,6 +2,10 @@
 
 This project demonstrates a customizable React-based selectable dropdown component. It uses functional components, hooks such as `useState`, `useEffect`, and `useRef`, and provides several configurable properties to tailor dropdown behavior and appearance.
 
+## Usage
+
+
+
 ## Features
 
 - **Dynamic Text Width Calculation**: Automatically adjusts the width of the dropdown based on the label of the selected option.
