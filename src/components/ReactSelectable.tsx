@@ -30,7 +30,17 @@ const calculateTextWidth = (text: string): number => {
     return baseWidth + text.length * charWidth;
 };
 
-const DynamicWidthText: React.FC<{ text: string; width: string;starteritem: string;colorfultext:boolean;yLimit: number; isOpen: boolean; onClick: () => void; isPlaceholder: boolean }> = ({ text, colorfultext,starteritem, isOpen, onClick, isPlaceholder }) => {
+const DynamicWidthText: React.FC<{
+    text: string,
+    width: string,
+    starteritem: string,
+    colorfultext: boolean,
+    yLimit: number,
+    isOpen: boolean,
+    onClick: () => void,
+    isPlaceholder: boolean,
+    alignment?: string | undefined
+}> = ({text, colorfultext, starteritem, isOpen, onClick, isPlaceholder, alignment}) => {
     return (
     <div
         // style={{ width }} -> karakter sayısına göre widthi tespit et. emrev1
