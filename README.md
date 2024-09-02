@@ -31,7 +31,7 @@ npm run dev
 
 
 ## Usage
- ```
+ ``` ```
 <ReactSelectable
                 yLimit={6}
                 starteritem={<div>
