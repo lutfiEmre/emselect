@@ -3,7 +3,7 @@
 This project demonstrates a customizable React-based selectable dropdown component. It uses functional components, hooks such as `useState`, `useEffect`, and `useRef`, and provides several configurable properties to tailor dropdown behavior and appearance.
 
 ## Usage
- ```<ReactSelectable
+ <ReactSelectable
                 yLimit={6}
                 starteritem={<div>
                     ⭐
