@@ -40,6 +40,7 @@ npm run dev
                 className={"w-full "}
                 alignment={"center"}
                 colorfultext={true}
+                direction={"bottom"}
                 label="Pick the lucky apple"
                 options={options2}
                 value={selectedValue.presentation}
@@ -66,6 +67,9 @@ variations {start,center,end}
 
 colorfultext={true}
 This prop is a boolean that controls whether or not the text inside the component will be colorful. When set to true, the text will have color variations.
+
+direction={"bottom"}
+Placement of the drop-down select menu example below on the left on the right at the top
 
 label="Pick the lucky apple"
 This prop provides a label for the component, which can act as an instructional or descriptive message for the user. In this case, the label prompts the user to "Pick the lucky apple".
