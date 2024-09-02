@@ -3,7 +3,7 @@
 This project demonstrates a customizable React-based selectable dropdown component. It uses functional components, hooks such as `useState`, `useEffect`, and `useRef`, and provides several configurable properties to tailor dropdown behavior and appearance.
 
 ## Usage
- <ReactSelectable
+ ```<ReactSelectable
                 yLimit={6}
                 starteritem={<div>
                     ⭐
@@ -18,8 +18,8 @@ This project demonstrates a customizable React-based selectable dropdown compone
                 setvalue={setSelectedValue}
 
                 fieldName="presentation"
-            /> ```
-Props Explanation:
+            /> 
+ ```Props Explanation:
 yLimit={6}
 This prop limits the number of selectable items. It defines the maximum number of items that can be selected at the same time. In this example, the limit is set to 6.
 
