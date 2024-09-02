@@ -24,7 +24,7 @@ interface ReactSelectableProps {
     label?: string;
     yLimit?: number;
     alignment?: string;
-    direction?: 'top' | 'bottom';
+    direction?: 'top' | 'bottom' | 'left' | 'right';
 }
 
 

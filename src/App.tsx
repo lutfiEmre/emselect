@@ -59,7 +59,7 @@ function App() {
                   yLimit={6}
                   starteritem={<div>
                       <svg className="w-[30px] h-[30px] " viewBox="0 0 133 138" fill="none"
-                           xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                           xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
                           <rect x="-4" width="136.197" height="137.031" fill="url(#pattern0)"></rect>
                           <defs>
                               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -87,7 +87,7 @@ function App() {
                   yLimit={6}
                   starteritem={<div>
                       <svg className="w-[30px] h-[30px] " viewBox="0 0 133 138" fill="none"
-                           xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                           xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
                           <rect x="-4" width="136.197" height="137.031" fill="url(#pattern0)"></rect>
                           <defs>
                               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -115,7 +115,7 @@ function App() {
                   yLimit={6}
                   starteritem={<div>
                       <svg className="w-[30px] h-[30px] " viewBox="0 0 133 138" fill="none"
-                           xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                           xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
                           <rect x="-4" width="136.197" height="137.031" fill="url(#pattern0)"></rect>
                           <defs>
                               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -142,7 +142,7 @@ function App() {
           </div>
             <div className={'flex flex-col mt-[50px] gap-[0px]  items-center text-[25px]'}>
                 <svg className="w-[415px] h-[150px] " viewBox="0 0 133 138" fill="none"
-                     xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                     xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
                     <rect x="-4" width="136.197" height="137.031" fill="url(#pattern0)"></rect>
                     <defs>
                         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
