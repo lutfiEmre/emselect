@@ -28,10 +28,10 @@ cd react-selectable-dropdown
 npm install
 
 npm run dev
-
+ ```
 
 ## Usage
- ``` ```
+ ```
 <ReactSelectable
                 yLimit={6}
                 starteritem={<div>
@@ -47,8 +47,10 @@ npm run dev
                 setvalue={setSelectedValue}
 
                 fieldName="presentation"
-            /> 
- ```Props Explanation:
+            />
+ ```
+ ```
+ Props Explanation:
 yLimit={6}
 Maximum number of items that can be displayed on 1 page.
 
@@ -82,3 +84,4 @@ This prop is a function used to update the selected value when the user makes a 
 
 fieldName="presentation"
 This prop specifies the name of the field being used for the selection. In this case, it is set to "presentation", meaning the selection is tied to this particular field.
+ ```
