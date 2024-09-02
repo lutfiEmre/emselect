@@ -2,6 +2,34 @@
 
 This project demonstrates a customizable React-based selectable dropdown component. It uses functional components, hooks such as `useState`, `useEffect`, and `useRef`, and provides several configurable properties to tailor dropdown behavior and appearance.
 
+ReactSelectable Component
+The ReactSelectable component is a customizable and dynamic component used to create a selection interface. Below are explanations of each prop used in the example:
+
+
+## Features
+
+- **Dynamic Text Width Calculation**: Automatically adjusts the width of the dropdown based on the label of the selected option.
+- **Starter Item**: An optional starter item to display within the dropdown selection area before the user makes a selection.
+- **Customizable Alignment**: Dropdown options can be aligned to the start or center.
+- **Customizable Max Height**: Limit the visible dropdown options with a scrollable view, controlled by the `yLimit` property.
+- **Colorful Text Animation**: Supports colorful text animation inside the dropdown using the `colorfultext` prop.
+- **Click Outside to Close**: The dropdown closes when the user clicks outside the component.
+- **Upward or Downward Dropdown**: Set the dropdown direction with the `direction` prop.
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/react-selectable-dropdown.git
+
+cd react-selectable-dropdown
+
+npm install
+
+npm run dev
+
+
 ## Usage
  ```
 <ReactSelectable
@@ -54,30 +82,3 @@ This prop is a function used to update the selected value when the user makes a 
 
 fieldName="presentation"
 This prop specifies the name of the field being used for the selection. In this case, it is set to "presentation", meaning the selection is tied to this particular field.
-
-ReactSelectable Component
-The ReactSelectable component is a customizable and dynamic component used to create a selection interface. Below are explanations of each prop used in the example:
-
-
-## Features
-
-- **Dynamic Text Width Calculation**: Automatically adjusts the width of the dropdown based on the label of the selected option.
-- **Starter Item**: An optional starter item to display within the dropdown selection area before the user makes a selection.
-- **Customizable Alignment**: Dropdown options can be aligned to the start or center.
-- **Customizable Max Height**: Limit the visible dropdown options with a scrollable view, controlled by the `yLimit` property.
-- **Colorful Text Animation**: Supports colorful text animation inside the dropdown using the `colorfultext` prop.
-- **Click Outside to Close**: The dropdown closes when the user clicks outside the component.
-- **Upward or Downward Dropdown**: Set the dropdown direction with the `direction` prop.
-
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/react-selectable-dropdown.git
-
-cd react-selectable-dropdown
-
-npm install
-
-npm run dev
