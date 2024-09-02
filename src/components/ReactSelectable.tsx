@@ -107,8 +107,8 @@ const ReactSelectable: React.FC<ReactSelectableProps> = ({ options,starteritem, 
     const positionClass =
         direction === 'bottom' ? 'top-full left-0 mt-2' :
             direction === 'top' ? 'bottom-[-50px] left-0 mb-2' :
-                direction === 'left' ? 'left-[-420px] top-0 ml-2' :
-                    direction === 'right' ? 'left-[420px] top-0 mr-2' : '';
+                direction === 'left' ? 'top-full left-0 mt-2 lg:left-[-420px] lg:top-0 lg:ml-2' :
+                    direction === 'right' ? 'top-full left-0 mt-2 lg:left-[420px] lg:top-0 lg:mr-2' : '';
 
     return (
         <div ref={dropdownRef} className={`relative select-none  !w-full  ${className}`}>

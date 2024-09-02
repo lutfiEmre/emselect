@@ -101,7 +101,7 @@ function App() {
                   </div>}
                   className={"w-full "}
                   alignment={"start"}
-                  colorfultext={false}
+                  colorfultext={true}
                   label="Choose your favorite bug"
                   direction={'left'}
                   options={options1}
