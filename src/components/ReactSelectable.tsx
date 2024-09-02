@@ -51,11 +51,11 @@ const DynamicWidthText: React.FC<{
         onClick={onClick}
         className="border-[1px] cursor-pointer w-full border-opacity-20 justify-between pr-[15px] pl-[15px] rounded-[8px] flex  items-center h-[41px] border-[#444444]"
     >
-        <div className={`max-w-[80%] flex items-center gap-[5px] overflow-hidden ${isPlaceholder ? 'text-[#444444] text-opacity-50' : ''}`}>
+        <div className={`max-w-[80%] flex items-center gap-[5px] overflow-hidden ${isPlaceholder ? 'text-[#444444] text-opacity-100' : 'text-opacity-50'}`}>
             <div className={'mt-[0px] text-[16px] pr-[2px]'}>
                 {starteritem}
             </div>
-            <span className={`${colorfultext && "animated-text"}`}>{text}</span>
+            <span className={`${colorfultext && "animated-text"} ${isPlaceholder ? 'text-[#444444] text-opacity-50' : 'text-opacity-50'}`}>{text}</span>
         </div>
 
         <svg className={`${isOpen && "rotate-[180deg]"} transition-all duration-50 ease-linear`} width="24" height="25"
@@ -104,12 +104,14 @@ const ReactSelectable: React.FC<ReactSelectableProps> = ({ options,starteritem, 
     const selectedLabel = options.find(option => option.value === value)?.label || label || '';
     const isPlaceholder = !value;
 
-    const positionClass = direction === 'bottom'
-        ? 'top-full left-0 mt-2'
-        : 'bottom-full left-0 mb-2 transform -translate-y-full';
+    const positionClass =
+        direction === 'bottom' ? 'top-full left-0 mt-2' :
+            direction === 'top' ? 'bottom-[-50px] left-0 mb-2' :
+                direction === 'left' ? 'left-[-420px] top-0 ml-2' :
+                    direction === 'right' ? 'left-[420px] top-0 mr-2' : '';
 
     return (
-        <div ref={dropdownRef} className={`relative  !w-full  ${className}`}>
+        <div ref={dropdownRef} className={`relative select-none  !w-full  ${className}`}>
             <DynamicWidthText starteritem={starteritem} colorfultext={colorfultext} alignment={alignment} isOpen={isOpen} text={selectedLabel} width={dropdownWidth} onClick={handleToggle} isPlaceholder={isPlaceholder} />
             {isOpen && (
                 <div
